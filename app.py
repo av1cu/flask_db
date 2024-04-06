@@ -24,4 +24,4 @@ def index():
     books = cursor.fetchall()
     cursor.close()
     conn.close()
-    return render_template('pages/index.html', books=books)
+    return render_template('index.html', books=books)
